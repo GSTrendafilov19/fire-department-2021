@@ -5,4 +5,4 @@
 - Mario Boshev - Back-end developer
 - Georgi Ivanov - Designer
 ## About our project
- Our project is a site about fire departments in the Burgas region.
+ Our project is a site for fire departments in the Burgas region.
