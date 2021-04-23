@@ -38,13 +38,14 @@ body {
 #top img {
     position: absolute;
     top: 30px;
+    left: 30px;
     width: 128px;
 }
 
 #top h1 {
     position: absolute;
     top: 30px;
-    left: 160px;
+    left: 180px;
 }
 
 .section {
@@ -88,6 +89,7 @@ body {
     left: 5vw;
     margin: 0;
     background-color: gray;
+    width: 430px;
   }
 
   .title {
@@ -99,10 +101,9 @@ body {
   }
 
   .content {
-      width: 600px;
-      height: 500px;
+      width: 400px;
+      height: auto;
       background-color: grey;
-      margin: 0;
   }
 
   .content h2, p {
@@ -110,7 +111,23 @@ body {
       left: 0.5vw;
   }
 
+  .content h2 {
+    top: -20px;
+  }
+
+  .content p {
+    top: -5px;
+  }
+
   .news img {
-      position: absolute;
-      width: 600px;
+      width: 430px;
+  }
+
+  .content a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .content a:hover {
+      text-decoration: underline;
   }
