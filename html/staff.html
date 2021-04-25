@@ -17,7 +17,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(195, 221, 255);
+    background-color:rgba(0, 162, 255, 0.315);
 }
 
 .navbar {
@@ -96,21 +96,37 @@ body {
       width: 100%;
   }
 
-    .content3 {
-    position: absolute;
-    top: 30vh;
-    left: 5vw;
-    display: flex;
-    flex-direction:column;
-    align-items: flex-start;
-    background-color: gray;
-    width: auto;
-    border-radius: 20px;
+  .boxes {
+        padding: 50px;
   }
 
-  #car1{
-      width: 700px;
+  .boxes img {
+      flex-basis: 20%;
+      width: 500px;
   }
+
+  .box1 {
+      background-color:rgba(255, 227, 102, 0.692) ;
+      width: 950px;
+      display: flex;
+  }
+
+  .text1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+  }
+
+  .box1 ul, li {
+    line-height: 30px;
+    margin-top: 0rem;
+  }
+
+  .box1 p {
+      margin-top: 0rem;
+  }
+
+
 
     </style>
 
@@ -127,12 +143,21 @@ body {
         <a href="data.html">Данни и статистики</a>
         <a href="report.html">Докладвай Пожар!</a>
     </div>
-    <div class="section">   
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="../videos/fire.mp4" type="video/mp4">
-            </video>
-
+    <div class="boxes">
+        <div class="box1">
+            <img src="../images/pic1.jpg">
+            <div class="text1">
+            <h3>Екип 1</h3>
+            <ul>
+                <li><b>Колесна формула - </b> 4х4 , 4х6 или 6х6</li>
+                <li><b>Пълна маса - </b> 50 100 кг.</li>
+                <li><b>Мощност - </b> 353 kW</li>
+                <li><b>Полезен товар - </b>25 000 кг; 46 000 кг. и др.</li>
+                <li><b>Максимална скорост - </b> 80 км/ч</li>
+                <li><b>Обща дължина - </b> до 16 м</li>
+            </ul>
+        </div>
         </div>
     </div>
+</body>
+</html>
