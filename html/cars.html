@@ -4,37 +4,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="images/fire.png">
+    <link rel="icon" href="../images/fire.png">
     <script src="js/main.js"></script>
     <title>Пожарна безопасност Бургас</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body {
+  font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#92a8d1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    height: 50px;
+}
+
+.navbar a {
+  position: relative;
+  left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    text-transform: uppercase;
+    transition: .25s;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#top {
+    display: flex;
+    height: 170px;
+    padding: 10px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+#top img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 128px;
+}
+
+#top h1 {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+
+.section {
+    position:sticky;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+  }
+  
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(195, 221, 255);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+  }
+
+  video {
+      width: 100%;
+  }
+
+  .boxes {
+        padding: 50px;
+  }
+
+  .boxes img {
+      flex-basis: 20%;
+      width: 500px;
+  }
+
+  .box1 {
+      background-color:rgb(255, 147, 147) ;
+      width: 950px;
+      display: flex;
+  }
+
+  .text1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+  }
+
+  .box1 ul, li {
+    line-height: 30px;
+    margin-top: 0rem;
+  }
+
+  .box1 p {
+      margin-top: 0rem;
+  }
+
+  .box2 {
+      background-color:rgb(255, 147, 147) ;
+      width: 950px;
+      display: flex;
+  }
+
+  .text2 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+  }
+
+  .box2 ul, li {
+    line-height: 30px;
+    margin-top: 0rem;
+  }
+
+  .box2 p {
+      margin-top: 0rem;
+  }
+
+    </style>
 </head>
 <body>
     <div id="top">
         <h1>Пожарна Безопасност - област Бургас</h1>
-        <img src="images/fire.png">
+        <img src="../images/fire.png">
     </div>
     <div class="navbar">
-        <a href="index.html">Начало</a>
-        <a href="html/departments.html">Пожарни Центрове</a>
-        <a href="html/data.html">Данни и статистики</a>
-        <a href="html/report.html">Докладвай Пожар!</a>
+        <a href="../index.html">Начало</a>
+        <a href="departments.html">Пожарни Центрове</a>
+        <a href="data.html">Данни и статистики</a>
+        <a href="report.html">Докладвай Пожар!</a>
     </div>
-        <h1 id="p">Новини и събития</h1>
-        
-    <div class="section">   
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="videos/fire.mp4" type="video/mp4">
-            </video>
+<div class="boxes">
+    <div class="box1">
+        <img src="../images/car1.jpg">
+        <div class="text1">
+        <h2>Влекач - тежковоз</h2>
+        <ul>
+            <li><b>Колесна формула - </b> 4х4 , 4х6 или 6х6</li>
+            <li><b>Пълна маса - </b> 50 100 кг.</li>
+            <li><b>Мощност - </b> 353 kW</li>
+            <li><b>Полезен товар - </b>25 000 кг; 46 000 кг. и др.</li>
+            <li><b>Максимална скорост - </b> 80 км/ч</li>
+            <li><b>Обща дължина - </b> до 16 м</li>
+        </ul>
+        <p>Специализираните влекачи имат широко предназначение в аварийно-спасителната дейност, транспортирането на строителна и специализирана техника.</p>
     </div>
     </div>
-
-  
-    
-
-
+<br><br>
+    <div class="box1">
+        <img src="../images/car31.jpg">
+        <div class="text1">
+        <h2>Индустриален противопожарен автомобил</h2>
+        <ul>
+            <li><b>Резервоар за вода - </b> 2500 - 6000л.</li>
+            <li><b>Резервоар за пенообразувател - </b> 250 - 400л.</li>
+            <li><b>Дозатор - </b> 0-6 % разтвор</li>
+            <li><b>Помпа - </b>За нормално налягане</li>
+            <li><b>Уредба за бързо действие - </b> 60m</li>
+            <li><b>Струйник на бронята - </b> 500 l/min</li>
+        </ul>
+        <p>Индустриалните противопожарни автомобили са предназначени за охрана на големи промишлени обекти от собствените им пожарни служби.</p>
+    </div>
+    </div>
+    <br><br>
+    <div class="box2">
+        <img src="../images/car61.jpg">
+        <div class="text2">
+        <h2>Противопожарни автомобили - тежък клас</h2>
+        <ul>
+            <li><b>Резервоар за вода - </b> > 6 000л.</li>
+            <li><b>Резервоар за пенообразувател - </b> > 600л.</li>
+            <li><b>Дозатор - </b> 0-6 % разтвор</li>
+            <li><b>Помпа - </b>Ruberg</li>
+            <li><b>Уредба за бързо действие - </b> 60m</li>
+        </ul>
+        <p>Райони с недостатъчно източници на водоснабдяване – малки населени места, полски и горски територии, както и при гасене на пожари в обекти, в които е необходимо още в ранните етапи на развитие на  пожара да бъдат доставени големи количества гасителни вещества.</p>
+    </div>
+    </div>
+    <br><br>
+    <div class="box1">
+        <img src="../images/car152.jpg">
+        <div class="text1">
+        <h2>Аварийно - спасителни автомобили</h2>
+        <ul>
+            <li><b>Базово шаси - </b> 14 t, 4x4</li>
+            <li><b>Екипаж - </b> 1+2</li>
+            <li><b>Осветителна мачта - </b> 2 х 1000W</li>
+            <li><b>Генератор - </b>10kVA</li>
+            <li><b>Kран/Обхват - </b> 9,9 tm/16,6 m</li>
+        </ul>
+        <p>Аварийно-спасителните автомобили са предназначени за ликвидиране на последиците от бедствия, аварии и катастрофи, както и за спасяване на застрашени и пострадали хора от зоната на аварията.</p>
+    </div>
+    </div>
+</div>
 </body>
 </html>
 
