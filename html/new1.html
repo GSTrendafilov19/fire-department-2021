@@ -12,21 +12,23 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-body {
+        body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-#navbar {
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-color: rgb(128, 128, 128);
     height: 50px;
 }
 
-#navbar a {
-    position: relative;
-    top: 13px;
-    left: 35px;
+.navbar a {
+  position: relative;
+  left: 50px;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -35,12 +37,13 @@ body {
     transition: .25s;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: black;
     background-color: rgb(255, 255, 255);
 }
 
 #top {
+    display: flex;
     height: 170px;
     padding: 10px;
     background-color: rgb(68, 68, 68);
@@ -60,36 +63,6 @@ body {
     left: 180px;
 }
 
-.section {
-    position:sticky;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% ;
-  }
-  
-  .color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(195, 221, 255);
-    width: 100%;
-    height: 100vh;
-    opacity: 0.5;
-  }
-
-  video {
-      width: 100%;
-  }
   #title {
       width: 700px;
       margin: 0 20px;
@@ -97,14 +70,16 @@ body {
   }
 
   #title p {
+      display: flex;
       float: right;
-      position: relative;
-      top: -25px;
+      margin-top: -1rem;
   }
   
   article {
+    position: absolute;
+    display: flex;
       font-size: 20px;
-      width: 900px;
+      width: 60rem;
       margin: 0 70px;
       padding: 0px;
       clear: both;
@@ -133,7 +108,7 @@ body {
         <h1>Пожарна Безопасност - област Бургас</h1>
         <img src="../images/fire.png">
     </div>
-    <div id="navbar">
+    <div class="navbar">
         <a href="../index.html">Начало</a>
         <a href="departments.html">Пожарни Центрове</a>
         <a href="data.html">Данни и статистики</a>
@@ -154,7 +129,7 @@ body {
 
 Комплексен победител и носител на титлата пожарникар на годината стана комисар Николай Вълчев – директор на РДПБЗН-Хасково. През изминалата година той лично ръководи дейностите по погасяване на мащабните полски и горски пожари на територията на общините Свиленград, Любимец и Ивайловград. Комисар Вълчев бе награден с почетното отличие на вътрешното министерство „За доблест и заслуги“ I степен.<br><br>
 
-Колективна награда бе присъдена на мл. инспектор Надеждю Агов и мл. инспектор Красимир Добранов – водолази в сектор СОД към РДПБЗН-Пловдив. На 2 май двамата успяват да освободят повреден изпускателен кран на язовир Бяла чешма и по този начин да спасят от наводнение град Павел баня.<br><br><br>
+Колективна награда бе присъдена на мл. инспектор Надеждю Агов и мл. инспектор Красимир Добранов – водолази в сектор СОД към РДПБЗН-Пловдив. На 2 май двамата успяват да освободят повреден изпускателен кран на язовир Бяла чешма и по този начин да спасят от наводнение град Павел баня.<br><br><br><br><br><br><br><br><br>
     </article>
     <img src=../images/p2.jpg id="img1"><br><br>
     <img src="../images/8.jpg" id="img2">
