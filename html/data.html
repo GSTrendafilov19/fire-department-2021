@@ -95,6 +95,98 @@ body {
   video {
       width: 100%;
   }
+
+  .depo2 {
+      position: relative;
+      top: 1.5vh;
+      background-color: gray;
+        width: auto;
+        border-radius: 20px;
+        height: 525px;
+  }
+
+  .depo2 p {
+        font-size: 20px;
+    }
+
+    .depo2 h2, p {
+        margin-left: 1.5rem;
+    }
+
+    .depo2 h2 {
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightsalmon;
+        margin: 0;
+        height: 50px;
+        width: 100%;
+    }
+
+    .center{
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+       left: 3vw;
+       top: 33vh;
+       padding: 50px 0 0 50px;
+       z-index: 1000;
+       flex: 1;
+    }
+
+    .center img{
+        width: 800px;
+        height: 525px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .depo3 {
+      position: relative;
+      top: 1.5vh;
+      background-color: gray;
+        width: auto;
+        border-radius: 20px;
+        height: 525px;
+        left: 2.5vw;
+  }
+
+  .p {
+        font-size: 20px;
+    }
+
+    .depo3 h2, p {
+        margin-left: 1.5rem;
+    }
+
+    .depo3 h2 {
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightsalmon;
+        margin: 0;
+        height: 50px;
+        width: 100%;
+    }
+
+    .depo2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .depo2 a:hover {
+    text-decoration: underline;
+  }
+  
+ .depo3 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .depo3 a:hover {
+    text-decoration: underline;
+  }
     </style>
 
 
@@ -116,5 +208,33 @@ body {
             <video autoplay loop muted>
                 <source src="../videos/fire.mp4" type="video/mp4">
             </video>
+
+        </div>
+    </div>
+
+    <div class="center">
+
+    
+
+    <div class="depo2">
+        <a href="cars.html">    
+        <h2>Пожарни автомобили</h2>
+        <img src="../images/car1.jpg">
+    </a>
+        </div>
+
+                <div class="depo3">
+                    <a href="html/staff.html">
+                        <h2>Служители</h2>
+                        </a>
+                    <a href="html/cars.html">
+                    <img id="car1" src="../images/staff1.jpg">
+                    </a>
+                    
+                </div>
+
+                
+            </div>
+
         </body>
         </html>
