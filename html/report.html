@@ -10,23 +10,26 @@
     <title>Пожарна безопасност Бургас</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(195, 221, 255);
 }
 
-#navbar {
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-color: rgb(128, 128, 128);
     height: 50px;
 }
 
-#navbar a {
-    position: relative;
-    top: 13px;
-    left: 35px;
+.navbar a {
+  position: relative;
+  left: 50px;
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -35,12 +38,13 @@ body {
     transition: .25s;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: black;
     background-color: rgb(255, 255, 255);
 }
 
 #top {
+    display: flex;
     height: 170px;
     padding: 10px;
     background-color: rgb(68, 68, 68);
@@ -99,7 +103,7 @@ body {
         <h1>Пожарна Безопасност - област Бургас</h1>
         <img src="../images/fire.png">
     </div>
-    <div id="navbar">
+    <div class="navbar">
         <a href="../index.html">Начало</a>
         <a href="departments.html">Пожарни Центрове</a>
         <a href="data.html">Данни и статистики</a>
