@@ -96,10 +96,8 @@ body {
   }
 
   *{
-                font-family: sans-serif;
+
                 box-sizing: border-box;
-                margin: 0;
-                padding: 0;
             }
  
             body{
@@ -108,20 +106,21 @@ body {
  
             .form-wrapper{
                 position: absolute;
-                top: 50%;
+                top: 35%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 20px;
-                width: 400px;
+                width: 700px;
                 padding:20px;
                 border: 1px solid #ffffff;
                  
             }
  
-            h1{
-                color: white;
+               .form-wrapper h1{
+                color: black;
                 text-align: center;
                 margin-bottom: 30px;
+                text-transform: uppercase;
             }
  
             label{
@@ -133,7 +132,7 @@ body {
                 width: 100%;
                 padding: 10px;
                 margin: 10px 0px 10px 0;
-                background: linear-gradient(to right,#014d6f 10%,#2b8e8b);
+                background-color: black;
                 border: 1px solid white;
                 border-radius: 5px;
                 color: #ffffff;
@@ -145,6 +144,8 @@ body {
                 font-size: 20px;
                 color: white;
                 background: rgba(8, 212, 8, 0.664);
+                width: 120px;
+                float: right;
             }
  
             input[type="submit"]:hover{
@@ -175,25 +176,25 @@ body {
 
             <div class="form-wrapper">
  
-                <h1>Sign up</h1>
+                <h1>Докладване на пожар</h1>
                  
                 <form>
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your First Name">
+                    <label for="firstname">Име:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Вашето име">
      
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your Last Name">
+                    <label for="lastname">Фамилия:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Вашата фамилия">
      
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <label for="email">Телефон:</label>
+                    <input type="" id="email" name="email" placeholder="Your Email">
      
-                    <label for="email">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Enter Password">
+                    <label for="email">Адрес:</label>
+                    <input type="text" id="password" name="password" placeholder="Enter Password">
      
-                    <label for="confirm_password">Conform Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Conform Password">
+                    <label for="confirm_password">Координати:</label>
+                    <input type="text" id="confirm_password" name="confirm_password" placeholder="Conform Password">
      
-                    <input type="submit"></input>
+                    <input type="submit" value="Изпрати"></input>
                 </form>
     </div>
         </body>
