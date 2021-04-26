@@ -1,6 +1,7 @@
-<img src="images/logo.png" width="256px" height="256px">
+<img src="images/logo.png" width="312px" height="256px"> 
 
-## Team The Machines
+# Team The Machines
+
 ## Developers
 - Georgi Trendafilov - Scrum Trainer
 - Petar Nikolov - Front-end developer
