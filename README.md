@@ -1,4 +1,5 @@
-![Screenshot](images/logo.png) Team The Machines
+![Screenshot](images/logo.png) 
+## Team The Machines
 ## Developers
 - Georgi Trendafilov - Scrum Trainer
 - Petar Nikolov - Front-end developer

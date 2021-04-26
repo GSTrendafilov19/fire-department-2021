@@ -215,3 +215,7 @@ body {
   .content4 h2 {
     margin-top: -0.5rem;
   }
+
+  #img {
+    display: none;
+  }
