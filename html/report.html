@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="icon" href="../images/fire.png">
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <title>Пожарна безопасност Бургас</title>
 
     <style>
@@ -16,7 +16,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(195, 221, 255);
+    background-color: rgba(79, 176, 255, 0.548);
 }
 
 .navbar {
@@ -99,25 +99,23 @@ body {
 
                 box-sizing: border-box;
             }
- 
-            body{
-                background: linear-gradient(to right,#014d6f 10%,#2b8e8b);
-            }
+
  
             .form-wrapper{
-                position: absolute;
-                top: 35%;
+                position: relative;
+                top: 45vh;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 20px;
-                width: 700px;
+                width: 850px;
                 padding:20px;
-                border: 1px solid #ffffff;
-                 
+                border: 2px solid #ffffff;
+                background-color: rgb(131, 131, 131);
+                height: 780px;
             }
  
                .form-wrapper h1{
-                color: black;
+                color: rgb(0, 0, 0);
                 text-align: center;
                 margin-bottom: 30px;
                 text-transform: uppercase;
@@ -132,15 +130,26 @@ body {
                 width: 100%;
                 padding: 10px;
                 margin: 10px 0px 10px 0;
-                background-color: black;
+                background-color: rgb(255, 255, 255);
                 border: 1px solid white;
                 border-radius: 5px;
-                color: #ffffff;
+                color: #000000;
+                display: inline-block;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0px 10px 0;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid white;
+                border-radius: 5px;
+                color: #000000;
                 display: inline-block;
             }
              
  
-            input[type="submit"]{
+            button[type="submit"]{
                 font-size: 20px;
                 color: white;
                 background: rgba(8, 212, 8, 0.664);
@@ -148,10 +157,46 @@ body {
                 float: right;
             }
  
-            input[type="submit"]:hover{
+            button[type="submit"]:hover{
                 cursor: pointer;
                 background: rgba(8, 212, 8, 0.815);
             }
+
+            textarea {
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                height: 100px;
+                border: 1px solid white;
+                border-radius: 5px;
+                resize: none;
+                color:rgb(0, 0, 0);
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            #r1 {
+                width: 15px;
+            }
+
+            .form-wrapper img {
+                width: 200px;
+            }
+
+            .side {
+                position: absolute;
+                left: 38rem;
+                top: 43.5rem;
+           }
+
+           .side input {
+               position: absolute;
+               left: -7rem;
+           }
+
+           .side #l1, #l2, #l3, #l4 {
+               position: relative;
+               left: 1.2rem;
+               top: 0.2rem;
+           }
     </style>
 
 
@@ -167,34 +212,33 @@ body {
         <a href="data.html">Данни и статистики</a>
         <a href="report.html">Докладвай Пожар!</a>
     </div>
-    <div class="section">   
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="../videos/fire.mp4" type="video/mp4">
-            </video>
-
             <div class="form-wrapper">
  
                 <h1>Докладване на пожар</h1>
                  
-                <form>
+                <form method="GET">
                     <label for="firstname">Име:</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Вашето име">
+                    <input type="text" id="firstname" name="firstname" placeholder="Вашето име" required>
      
                     <label for="lastname">Фамилия:</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Вашата фамилия">
+                    <input type="text" id="lastname" name="lastname" placeholder="Вашата фамилия" required>
      
-                    <label for="email">Телефон:</label>
-                    <input type="" id="email" name="email" placeholder="Your Email">
+                    <label for="tnumber">Телефон:</label>
+                    <input type="" id="tnumber" name="tnumber" placeholder="Вашият телефон" required>
      
                     <label for="email">Адрес:</label>
-                    <input type="text" id="password" name="password" placeholder="Enter Password">
+                    <input type="text" id="password" name="password" placeholder="Адрес на произшествието"required>
      
-                    <label for="confirm_password">Координати:</label>
-                    <input type="text" id="confirm_password" name="confirm_password" placeholder="Conform Password">
-     
-                    <input type="submit" value="Изпрати"></input>
+                    <label for="coords">Координати:</label>
+                    <input type="text" id="coords" name="coords" placeholder="Координати на произшествието" required>
+
+                    <label for="moreinfo">Повече информация за пожара:</label><br><br>
+
+                    <textarea required>
+
+                    </textarea><br><br>
+                    <button onclick="est()" type="submit" value="Изпрати">Изпрати</button>
+                    
                 </form>
     </div>
         </body>
