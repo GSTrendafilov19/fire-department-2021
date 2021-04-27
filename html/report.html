@@ -33,20 +33,21 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    margin-right: 30px;
+    margin-right: 20px;
     text-transform: uppercase;
     transition: .35s;
-    height: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navbar a:hover {
-    display: flex;
-    align-items: center;
     color: black;
     background-color: rgb(255, 255, 255);
-    height: 100%;
 }
 
 .navbar a:active {
@@ -112,16 +113,16 @@ body {
 
  
             .form-wrapper{
-                position: relative;
+                position: absolute;
                 top: 45vh;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 20px;
                 width: 850px;
                 padding:20px;
-                border: 2px solid #ffffff;
-                background-color: rgb(131, 131, 131);
-                height: 780px;
+                border: 1px solid #000000;
+                background-color: white;
+                height: 830px;
             }
  
                .form-wrapper h1{
@@ -132,7 +133,7 @@ body {
             }
  
             label{
-                color: white;
+                color: rgb(0, 0, 0);
                 font-size: large;
             }
  
@@ -141,7 +142,7 @@ body {
                 padding: 10px;
                 margin: 10px 0px 10px 0;
                 background-color: rgb(255, 255, 255);
-                border: 1px solid white;
+                border: 1px solid rgb(0, 0, 0);
                 border-radius: 5px;
                 color: #000000;
                 display: inline-block;
@@ -181,6 +182,7 @@ body {
                 resize: none;
                 color:rgb(0, 0, 0);
                 font-family: 'Noto Sans', sans-serif;
+                border: 1px solid black;
             }
 
             #r1 {
@@ -207,6 +209,20 @@ body {
                left: 1.2rem;
                top: 0.2rem;
            }
+        
+           select {
+               height: 30px;
+           }
+
+           #s1 {
+               position: relative;
+               left: 3.5rem;
+           }
+
+           #s2 {
+               position: relative;
+               left: 3.5rem;
+           }
     </style>
 
 
@@ -219,9 +235,17 @@ body {
     <div class="navbar">
         <a href="../index.html">Начало</a>
         <a href="departments.html">Пожарни Центрове</a>
-        <a href="data.html">Данни и статистики</a>
+        <a href="data.html">Данни</a>
         <a href="report.html">Докладвай Пожар!</a>
     </div>
+    
+            
+    <div class="section">   
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="../videos/fire.mp4" type="video/mp4">
+            </video>
             <div class="form-wrapper">
  
                 <h1>Докладване на пожар</h1>
@@ -244,12 +268,31 @@ body {
 
                     <label for="moreinfo">Повече информация за пожара:</label><br><br>
 
-                    <textarea required>
+                    <textarea placeholder="Повече информация" required>
 
                     </textarea><br><br>
+
+                    <label for="select5">Изберете автомобил:</label>
+                    <select required>
+                        <option disabled selected>Изберете:</option>
+                        <option value="Влекач-Тежковоз" >Влекач-Тежковоз</option>
+                        <option value="Влекач-Тежковоз" >Индустриален противопожарен автомобил</option>
+                        <option value="Влекач-Тежковоз" >Противопожарни автомобили - тежък клас</option>
+                        <option value="Влекач-Тежковоз" >Аварийно - спасителни автомобили</option>
+                    </select>
+<br><br>
+                    <label for="select6" id="s2">Изберете Екип:</label>
+                    <select required id="s1"> 
+                        <option disabled selected>Изберете:</option>
+                        <option>Екип 1</option>
+                        <option>Екип 2</option>
+                        <option>Екип 3</option>
+                    </select>
                     <button onclick="est()" type="submit" value="Изпрати" id="submit">Изпрати</button>
                     
                 </form>
+    </div>
+    </div>
     </div>
         </body>
         </html>
